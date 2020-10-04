@@ -68,9 +68,9 @@
 
 
 .remote-video{
-    width:100%;
-    height:auto;
-    max-height: 90vh;
+    width:40vh;
+    /* height:auto; */
+    height: 70vh;
 }
 
 
