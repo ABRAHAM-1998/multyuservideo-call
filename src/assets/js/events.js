@@ -1,7 +1,7 @@
 import helpers from './helpers.js';
 
 window.addEventListener( 'load', () => {
-    document.querySelector('#invite').innerHTML = `<a href="whatsapp://send?text='${location.href}'" data-action="share/whatsapp/share" >test</a>`
+    document.querySelector('#invite').innerHTML = `<a href="whatsapp://send?text='${location.href}'" data-action="share/whatsapp/share">INVITE JOIN VIA WHATSAPP</a>`
     //When the chat icon is clicked
     // console.log(location.href)
     document.querySelector( '#toggle-chat-pane' ).addEventListener( 'click', ( e ) => {
