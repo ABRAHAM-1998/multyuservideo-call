@@ -7,8 +7,7 @@
     "express": "^4.17.1",
     "serve-favicon": "^2.5.0",
     "socket.io": "^2.3.0",
-    "main": "app.js",
-    "start": "node app",
+    "start": "node app"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
