@@ -1,7 +1,9 @@
 import helpers from './helpers.js';
 
 window.addEventListener( 'load', () => {
+    document.querySelector('#invite').innerHTML = `<a href="whatsapp://send?text='${location.href}'" data-action="share/whatsapp/share" >test</a>`
     //When the chat icon is clicked
+    // console.log(location.href)
     document.querySelector( '#toggle-chat-pane' ).addEventListener( 'click', ( e ) => {
         let chatElem = document.querySelector( '#chat-pane' );
         let mainSecElem = document.querySelector( '#main-section' );
@@ -67,8 +69,8 @@ window.addEventListener( 'load', () => {
             let roomLink = `${ location.origin }?room=${ roomName.trim().replace( ' ', '_' ) }_${ helpers.generateRandomString() }`;
 
             //show message with link to room
-            document.querySelector( '#room-created' ).innerHTML = `Room successfully created. Click <a href='${ roomLink }'>here</a> to enter room. 
-                Share the room link with your partners.`;
+            document.querySelector( '#room-created' ).innerHTML = `Room successfully created. Click<a href='${ roomLink }'><button class="form-control">VideoCAll</button</a> to enter room. 
+                .`;
 
             //empty the values
             document.querySelector( '#room-name' ).value = '';

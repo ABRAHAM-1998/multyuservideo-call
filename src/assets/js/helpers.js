@@ -111,14 +111,13 @@ export default {
         return {
             iceServers: [
                 {
-                    urls: ["stun:eu-turn4.xirsys.com"]
+                    urls: []
                 },
                 {
                     username: "ml0jh0qMKZKd9P_9C0UIBY2G0nSQMCFBUXGlk6IXDJf8G2uiCymg9WwbEJTMwVeiAAAAAF2__hNSaW5vbGVl",
                     credential: "4dd454a6-feee-11e9-b185-6adcafebbb45",
                     urls: [
-                        "turn:eu-turn4.xirsys.com:80?transport=udp",
-                        "turn:eu-turn4.xirsys.com:3478?transport=tcp"
+                       
                     ]
                 }
             ]
@@ -259,7 +258,6 @@ export default {
 
     setLocalStream( stream, mirrorMode = true ) {
         const localVidElem = document.getElementById( 'local' );
-
         localVidElem.srcObject = stream;
         mirrorMode ? localVidElem.classList.add( 'mirror-mode' ) : localVidElem.classList.remove( 'mirror-mode' );
     },
@@ -268,19 +266,7 @@ export default {
     adjustVideoElemSize() {
         let elem = document.getElementsByClassName( 'card' );
         let totalRemoteVideosDesktop = elem.length;
-        let newWidth = totalRemoteVideosDesktop <= 2 ? '50%' : (
-            totalRemoteVideosDesktop == 3 ? '33.33%' : (
-                totalRemoteVideosDesktop <= 8 ? '25%' : (
-                    totalRemoteVideosDesktop <= 15 ? '20%' : (
-                        totalRemoteVideosDesktop <= 18 ? '16%' : (
-                            totalRemoteVideosDesktop <= 23 ? '15%' : (
-                                totalRemoteVideosDesktop <= 32 ? '12%' : '10%'
-                            )
-                        )
-                    )
-                )
-            )
-        );
+        let newWidth = totalRemoteVideosDesktop <= 1 ? '100%':'100%'
 
 
         for ( let i = 0; i < totalRemoteVideosDesktop; i++ ) {

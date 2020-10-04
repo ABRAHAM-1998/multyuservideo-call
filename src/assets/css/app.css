@@ -1,7 +1,10 @@
+.color22{
+    background-color: indigo;
+}
 .chat-col{
     right: -100vw;
     bottom: 0;
-    top: 40.5px;
+    top: 90.5px;
     z-index: 1000;
     position: fixed;
     color: #fff;
@@ -66,12 +69,12 @@
     padding-top: 40px;
 }
 
-
+/* 
 .remote-video{
     width:40vh;
     /* height:auto; */
     height: 70vh;
-}
+} */
 
 
 .remote-video-controls{
@@ -156,7 +159,7 @@
 .record-option{
     height: 200px;
     border-radius: 10%;
-    border: 1px solid #17a2b8;
+    border: 1px solid indigo;
     cursor: pointer;
     padding: 10px;
     vertical-align: middle;
@@ -179,7 +182,7 @@
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #17a2b8;
+    border: 1px solid indigo;
     width: 80%;
 }
 
@@ -196,7 +199,7 @@
         width: 100vw;
         z-index: 99999;
         transition: 0.3s;
-        top: 47px;
+        /* top: 47px; */
     }
   
     .chat-opened::-webkit-scrollbar {
@@ -226,7 +229,7 @@
 
 @media (min-width:768px){
     .card{
-        width: 50%;
+        /* width: 50%; */
         z-index: 1000;
     }
 }
