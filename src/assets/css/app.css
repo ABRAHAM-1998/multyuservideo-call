@@ -66,11 +66,18 @@
     padding-top: 40px;
 }
 
+.bnfo{
+    background-color: indigo;
+    color: white;
+}
+
 
 .remote-video{
     width:100%;
     height:auto;
     max-height: 90vh;
+    background-color:black;
+    border: 2px solid indigo;
 }
 
 
@@ -93,10 +100,14 @@
 
 
 .local-video{
-    bottom: 0;
+    top: 0;
     left: 0;
     position: fixed;
     width:15vw;
+    margin-top: 10vh;
+    z-index: 10000;
+    border: 2px solid wheat;
+    border-radius: 10%;
 }
 
 
@@ -156,7 +167,7 @@
 .record-option{
     height: 200px;
     border-radius: 10%;
-    border: 1px solid #17a2b8;
+    border: 1px solid #673ab7;
     cursor: pointer;
     padding: 10px;
     vertical-align: middle;
@@ -179,7 +190,7 @@
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #17a2b8;
+    border: 1px solid #673ab7;
     width: 80%;
 }
 
@@ -219,7 +230,13 @@
 
 
     .local-video{
-        width:40vw;
+        width:25vw;
+        position: fixed;
+        top: 0;
+        margin-top: 10vh;
+        z-index: 10000;
+        border: 2px solid wheat;
+        border-radius: 10%;
     }
 }
 
@@ -229,4 +246,8 @@
         width: 50%;
         z-index: 1000;
     }
+}
+body{
+    background-color: black;
+    color:white;
 }
