@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TwentyTwo Video Call</title>
+        <title>Multi-User Video Call</title>
 
         <meta content="width=device-width, initial-scale=1" name="viewport" />
 
@@ -19,7 +19,7 @@
         <script src='assets/js/autolink.js'></script>
     </head>
 
-    <body style="background-color: black;color: white;">
+    <body>
         <div class="custom-modal" id='recording-options-modal'>
             <div class="custom-modal-content">
                 <div class="row text-center">
@@ -40,10 +40,10 @@
         </div>
         
         
-        <nav class="navbar fixed-top color22 rounded-0 d-print-none">
-            <div class="text-white text-center col-12" >TWENTYTWO VIDEO-CHAT</div>
+        <nav class="navbar fixed-top bg-info rounded-0 d-print-none">
+            <div class="text-white">Video Call</div>
 
-            <div class="pull-right room-comm" hidden id="share">
+            <div class="pull-right room-comm" hidden>
                 <button class="btn btn-sm rounded-0 btn-no-effect" id='toggle-video' title="Hide Video">
                     <i class="fa fa-video text-white"></i>
                 </button>
@@ -67,15 +67,12 @@
                 <button class="btn btn-sm rounded-0 btn-no-effect text-white">
                     <a href="/" class="text-white text-decoration-none"><i class="fa fa-sign-out-alt text-white" title="Leave"></i></a>
                 </button>
-                <button class="btn btn-sm rounded-0 btn-no-effect text-white" id='invite' title="whastapp Invite">
-                    <i class="fa fa-plus text-white"> </i>
-                </button>
             </div>
         </nav>
 
         <div class="container-fluid" id='room-create' hidden>
             <div class="row">
-                <div class="col-12 h2 mt-5 text-center">TwentyTwo </div>
+                <div class="col-12 h2 mt-5 text-center">Create Room</div>
             </div>
             
             <div class="row mt-2">
@@ -85,12 +82,12 @@
 
                 <div class="col-12 col-md-4 offset-md-4 mb-3">
                     <label for="room-name">Room Name</label>
-                    <input type="text" id='room-name' class="form-control rounded-pill" placeholder="Room Name">
+                    <input type="text" id='room-name' class="form-control rounded-0" placeholder="Room Name">
                 </div>
 
                 <div class="col-12 col-md-4 offset-md-4 mb-3">
                     <label for="your-name">Your Name</label>
-                    <input type="text" id='your-name' class="form-control rounded-pill" placeholder="Your Name">
+                    <input type="text" id='your-name' class="form-control rounded-0" placeholder="Your Name">
                 </div>
 
                 <div class="col-12 col-md-4 offset-md-4 mb-3">
@@ -133,13 +130,12 @@
             
             <div class="row">
                 <div class="col-md-12 main" id='main-section'>                    
-                    <div class="row mt-2 mb-2" id='videos'>
-                    </div>
+                    <div class="row mt-2 mb-2" id='videos'></div>
                 </div>
 
-                <div class="col-md-3 chat-col d-print-none mb-2 bg-secondary" id='chat-pane' hidden>
+                <div class="col-md-3 chat-col d-print-none mb-2 bg-info" id='chat-pane' hidden>
                     <div class="row">
-                        <div class="col-12 text-center  mb-3">Twenty Two Local Chat</div>
+                        <div class="col-12 text-center h2 mb-3">CHAT</div>
                     </div>
 
                     <div id='chat-messages'></div>
